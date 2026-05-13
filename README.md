@@ -28,7 +28,6 @@ This is a RESTful API for an Event Ticketing System. It allows users to browse e
 https://class-final-ticketing-system.onrender.com/
 
 ## API Endpoints
-Method	Endpoint	Description<br>
 Auth Routes<br>
 POST /api/auth/register - Register a new user<br>
 POST /api/auth/login - Login and receive JWT<br>
