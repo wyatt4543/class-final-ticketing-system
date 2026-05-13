@@ -47,5 +47,6 @@ GET /api/bookings/:id - Get specific booking details (Owner Only)<br>
 ## Testing with Postman
 Use the /api/auth/register endpoint to create an account.<br>
 Use the /api/auth/login endpoint to get your token.<br>
+When making an admin account be sure to use the user role in the json.<br>
 In Postman, go to the Authorization tab, select Bearer Token, and paste your token to access protected routes.<br>
 Test the rest of the routes normally with http://localhost:5000 behind each route using the bearer token whenever only certain people can access a route (example: http://localhost:5000/api/auth/login)
