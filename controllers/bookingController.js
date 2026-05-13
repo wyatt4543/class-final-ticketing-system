@@ -30,3 +30,16 @@ exports.getUserBookings = async (req, res) => {
     const bookings = await Booking.find({ user: req.user.id }).populate('event');
     res.json(bookings);
 };
+
+exports.getBookingById = async (req, res) => {
+    const booking = await Booking.findById(req.params.id).populate('event');
+
+    if (!booking) return res.status(404).json({ error: 'Booking not found' });
+
+    // Check if booking belongs to the logged-in user
+    if (booking.user.toString() !== req.user.id) {
+        return res.status(403).json({ error: 'Not authorized to view this booking' });
+    }
+
+    res.json(booking);
+};
