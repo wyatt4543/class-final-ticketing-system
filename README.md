@@ -29,21 +29,21 @@ https://class-final-ticketing-system.onrender.com/
 
 ## API Endpoints
 Method	Endpoint	Description<br>
-Auth Routes
-POST /api/auth/register - Register a new user
-POST /api/auth/login - Login and receive JWT
+Auth Routes<br>
+POST /api/auth/register - Register a new user<br>
+POST /api/auth/login - Login and receive JWT<br>
 
-Event Routes
-GET /api/events - Get all events (supports ?category= and ?date=)
-GET /api/events/:id - Get event details by ID
-POST /api/events - Create a new event (Admin Only)
-PUT /api/events/:id - Update event details (Admin Only)
-DELETE /api/events/:id - Delete an event (Admin Only)
+Event Routes<br>
+GET /api/events - Get all events (supports ?category= and ?date=)<br>
+GET /api/events/:id - Get event details by ID<br>
+POST /api/events - Create a new event (Admin Only)<br>
+PUT /api/events/:id - Update event details (Admin Only)<br>
+DELETE /api/events/:id - Delete an event (Admin Only)<br>
 
-Booking Routes
-POST /api/bookings - Book tickets for an event (User Only)
-GET /api/bookings - Get all bookings for the logged-in user
-GET /api/bookings/:id - Get specific booking details (Owner Only)
+Booking Routes<br>
+POST /api/bookings - Book tickets for an event (User Only)<br>
+GET /api/bookings - Get all bookings for the logged-in user<br>
+GET /api/bookings/:id - Get specific booking details (Owner Only)<br>
 
 ## Testing with Postman
 Use the /api/auth/register endpoint to create an account.
