@@ -50,3 +50,51 @@ Use the /api/auth/login endpoint to get your token.<br>
 When making an admin account be sure to use the user role in the json.<br>
 In Postman, go to the Authorization tab, select Bearer Token, and paste your token to access protected routes.<br>
 Test the rest of the routes normally with http://localhost:5000 behind each route using the bearer token whenever only certain people can access a route (example: http://localhost:5000/api/auth/login)
+
+## Example JSON for pages
+Register page
+```bash
+{
+  "name": "Admin User",
+  "email": "admin@test.com",
+  "password": "password123",
+  "role": "admin" 
+}
+```
+
+Login page
+```bash
+{
+  "email": "admin@test.com",
+  "password": "password123"
+}
+```
+
+Creating an event
+```bash
+{
+  "title": "Tech Conference 2026",
+  "description": "The future of AI.",
+  "category": "Technology",
+  "venue": "San Francisco",
+  "date": "2026-08-15",
+  "time": "10:00 AM",
+  "seatCapacity": 100,
+  "price": 50
+}
+```
+
+Creating a booking
+```bash
+{
+  "eventId": "6a0436cf2a24bc75aaa7b862",
+  "quantity": 2
+}
+```
+
+Updating an event
+```bash
+{
+  "price": 100
+}
+```
